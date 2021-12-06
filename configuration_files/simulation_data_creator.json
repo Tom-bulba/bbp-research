@@ -1,0 +1,19 @@
+{
+    "working_data": "02-12-2021",
+    "env": "local",
+    "ebs_market_data": {
+        "file_path": "/Users/tom/Downloads/ebs_market_data (4).csv"
+        },
+    "market_data_1": {
+        "file_path": "/Users/tom/Downloads/market_data_1.csv"
+        },
+    "market_data": {
+        "file_path": "/Users/tom/Downloads/market_data (2).csv"
+        },
+    "merged_raw_data": {
+        "file_path": "/Users/tom/Downloads/merged_raw_data (5).csv"
+        },
+    "view_market_data": {
+        "file_path": "/Users/tom/Downloads/view_market_data (2).csv"
+        }
+}

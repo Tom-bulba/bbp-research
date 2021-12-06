@@ -139,8 +139,8 @@ class AWSHandler():
                 print(status)
 
 
-if __name__ == "__main__":
-    aws_handler = AWSHandler("testing")
-    merged_raw_data = aws_handler.get_file_from_bucket("02-12-2021", "ebs_market_data.csv", "ebs-trading-arena")
-    print(merged_raw_data.head(10))
+# if __name__ == "__main__":
+#     aws_handler = AWSHandler("testing")
+#     merged_raw_data = aws_handler.get_file_from_bucket("02-12-2021", "ebs_market_data.csv", "ebs-trading-arena")
+#     print(merged_raw_data.head(10))
     
