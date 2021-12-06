@@ -170,6 +170,10 @@ class SimulationDataCreator():
             merged_df.fillna(method='pad', axis='rows', inplace=True)
         return merged_df
 
+    def keep_data_between_hours(self, df, start_hour, end_hour, hour_col_name):
+        df = df[(df[hour_col_name] >= start_hour) & (df[hour_col_name] <= end_hour)]
+        return df
+
 
 
 def merge_to_invoker_columns(row):
