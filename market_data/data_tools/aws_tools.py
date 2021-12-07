@@ -74,9 +74,9 @@ class AWSHandler():
                 # df_data = pd.read_csv(response.get("Body"), names=file_column_names, nrows=10000, skiprows=200000)
                 df_data = pd.read_csv(response.get("Body"), names=file_column_names, header=0)
             else:
-                df_data = pd.read_csv(response.get("Body"), nrows=10000, skiprows=200000)
+                # df_data = pd.read_csv(response.get("Body"), nrows=10000, skiprows=200000)
                 # df_data = pd.read_csv(response.get("Body"), nrows=10000)
-                # df_data = pd.read_csv(response.get("Body"))
+                df_data = pd.read_csv(response.get("Body"))
         else:
             # logger.error(f"process name {self.process_name}, Unsuccessful S3 get_object response. Status - {status}")
             print(status)
