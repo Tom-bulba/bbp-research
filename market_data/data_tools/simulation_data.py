@@ -83,7 +83,8 @@ class SimulationDataCreator():
         convert_invoker will convert into bool columns the df[col_to_convert] with a the type of bank_name is a string
         """
         # convert to string
-        df[col_to_convert] = df[col_to_convert].apply(eval)
+        # df[col_to_convert] = df[col_to_convert].apply(eval)
+        df[col_to_convert] = df[col_to_convert].apply(lambda x: convert_invokers_string_to_list(x)) 
 
         # convert into true/false columns
         unique_items = pd.Series([x for _list in df[col_to_convert] for x in _list])
@@ -173,6 +174,14 @@ class SimulationDataCreator():
     def keep_data_between_hours(self, df, start_hour, end_hour, hour_col_name):
         df = df[(df[hour_col_name] >= start_hour) & (df[hour_col_name] <= end_hour)]
         return df
+
+def convert_invokers_string_to_list(string_to_convert):
+    string_to_convert = string_to_convert.replace("'", "")
+    string_to_convert = string_to_convert.replace(" ", "")
+    string_to_convert = string_to_convert[1:-1]
+    string_to_convert = string_to_convert.split(",")
+    string_to_convert = list(set(string_to_convert))
+    return string_to_convert
 
 
 
