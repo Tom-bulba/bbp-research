@@ -83,8 +83,8 @@ class SimulationDataCreator():
         convert_invoker will convert into bool columns the df[col_to_convert] with a the type of bank_name is a string
         """
         # convert to string
-        # df[col_to_convert] = df[col_to_convert].apply(eval)
-        df[col_to_convert] = df[col_to_convert].apply(lambda x: convert_invokers_string_to_list(x)) 
+        df[col_to_convert] = df[col_to_convert].apply(eval)
+        # df[col_to_convert] = df[col_to_convert].apply(lambda x: convert_invokers_string_to_list(x)) 
 
         # convert into true/false columns
         unique_items = pd.Series([x for _list in df[col_to_convert] for x in _list])

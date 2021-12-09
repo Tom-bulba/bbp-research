@@ -1,6 +1,6 @@
 {
     "working_data": "02-12-2021",
-    "env": "ec2",
+    "env": "local",
     "ebs_market_data": {
         "file_path": "/Users/tom/Downloads/ebs_market_data (4).csv"
         },

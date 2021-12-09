@@ -1,0 +1,19 @@
+{
+    "working_data": "05-10-2021",
+    "env": "local",
+    "ebs_market_data": {
+        "file_path": "/Users/tom/dev/data/s3_data/05-10-2021/ebs_market_data.csv"
+        },
+    "market_data_1": {
+        "file_path": "/Users/tom/dev/data/s3_data/05-10-2021/market_data_1.csv"
+        },
+    "market_data": {
+        "file_path": "/Users/tom/dev/data/s3_data/05-10-2021/market_data.csv"
+        },
+    "merged_raw_data": {
+        "file_path": "/Users/tom/dev/data/s3_data/05-10-2021/merged_raw_data.csv"
+        },
+    "view_market_data": {
+        "file_path": "/Users/tom/dev/data/s3_data/05-10-2021/view_market_data.csv"
+        }
+}
